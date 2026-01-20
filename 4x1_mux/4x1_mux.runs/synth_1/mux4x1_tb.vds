@@ -1,0 +1,198 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Jan 17 23:57:07 2026
+# Process ID         : 10012
+# Current directory  : C:/Users/Rajeet013/4x1_mux/4x1_mux.runs/synth_1
+# Command line       : vivado.exe -log mux4x1_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux4x1_tb.tcl
+# Log file           : C:/Users/Rajeet013/4x1_mux/4x1_mux.runs/synth_1/mux4x1_tb.vds
+# Journal file       : C:/Users/Rajeet013/4x1_mux/4x1_mux.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-RNSTHJ2
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12400
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16942 MB
+# Swap memory        : 15032 MB
+# Total Virtual      : 31975 MB
+# Available Virtual  : 9499 MB
+#-----------------------------------------------------------
+source mux4x1_tb.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 538.973 ; gain = 219.504
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/utils_1/imports/synth_1/mux4x1_tb.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/utils_1/imports/synth_1/mux4x1_tb.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mux4x1_tb -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15100
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1083.805 ; gain = 532.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mux4x1_tb' [C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/sources_1/new/mux4x1_tb.v:5]
+INFO: [Synth 8-251] I0=1'bx, I1=1'bx, I2=1'bx. I3=1'bx, S0=1'bx, S1=1'bx, Y=1'bx [C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/sources_1/new/mux4x1_tb.v:14]
+INFO: [Synth 8-251] I0=1'b0, I1=1'b0, I2=1'b0. I3=1'b1, S0=1'b1, S1=1'b1, Y=1'bx [C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/sources_1/new/mux4x1_tb.v:14]
+INFO: [Synth 8-251] I0=1'b0, I1=1'b0, I2=1'b0. I3=1'b1, S0=1'b1, S1=1'b1, Y=1'bx [C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/sources_1/new/mux4x1_tb.v:14]
+INFO: [Synth 8-251] I0=1'b0, I1=1'b0, I2=1'b0. I3=1'b1, S0=1'b1, S1=1'b1, Y=1'bx [C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/sources_1/new/mux4x1_tb.v:14]
+INFO: [Synth 8-6157] synthesizing module 'mux4x1' [C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/sources_1/new/mux4x1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mux2x1' [C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/sources_1/new/mux4x1.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'mux2x1' (0#1) [C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/sources_1/new/mux4x1.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x1' (0#1) [C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/sources_1/new/mux4x1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x1_tb' (0#1) [C:/Users/Rajeet013/4x1_mux/4x1_mux.srcs/sources_1/new/mux4x1_tb.v:5]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.199 ; gain = 650.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.199 ; gain = 650.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.199 ; gain = 650.754
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.199 ; gain = 650.754
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1356.664 ; gain = 805.219
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1381.512 ; gain = 830.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1381.512 ; gain = 830.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1616.410 ; gain = 1064.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1616.410 ; gain = 1064.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1616.410 ; gain = 1064.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1616.410 ; gain = 1064.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1616.410 ; gain = 1064.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1616.410 ; gain = 1064.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1616.410 ; gain = 1064.965
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1616.410 ; gain = 1064.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1616.410 ; gain = 1064.965
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1617.395 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1739.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7b7b5b38
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1739.809 ; gain = 1194.199
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Rajeet013/4x1_mux/4x1_mux.runs/synth_1/mux4x1_tb.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mux4x1_tb_utilization_synth.rpt -pb mux4x1_tb_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 17 23:57:32 2026...
