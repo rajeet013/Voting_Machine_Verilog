@@ -4,57 +4,57 @@
 
 
 module ButtonControl(
-    input CLK,
-    input RST,
-    input BTN,
-    output reg VALID_VOTE
+    input CLK,  // CLK
+    input RST,  // RST
+    input BTN,  // BTN
+    output reg VALID_VOTE // Valid Vote
     );
     
-    reg[30:0] COUNTER;
+    reg[30:0] COUNTER; // Counts Number of votes
     
     always @(posedge CLK)
     begin
         if (RST)
-            COUNTER <= 0;
+            COUNTER <= 0;   // Resets Counter to zero when Reset is 0
         else
         begin
             if (BTN & COUNTER < 11)
-                COUNTER <= COUNTER + 1;
+                COUNTER <= COUNTER + 1;   // Adds till 10
             else if (!BTN)
-                COUNTER <= 0;
+                COUNTER <= 0;   // Resets Counter to zero if Button is not pushed
         end
      end
      
      always @(posedge CLK)
      begin
         if (RST)
-            VALID_VOTE <= 1'b0;
+            VALID_VOTE <= 1'b0;   // Resets Vote to zero
         else
         begin
             if (COUNTER == 10)
-                VALID_VOTE <= 1'b1;
+                VALID_VOTE <= 1'b1;    // Set Vote to 1 when counter reaches 10
             else
-                VALID_VOTE <= 1'b0;
+                VALID_VOTE <= 1'b0;     // Resets Vote to zero
         end
      end         
 endmodule
 
 module ModeControl (
-    input CLK,
-    input RST,
-    input MODE,
-    input VALID_VOTE_CASTED,
-    input [7:0] CAND1_VOTE,
-    input [7:0] CAND2_VOTE,
-    input [7:0] CAND3_VOTE,
-    input [7:0] CAND4_VOTE,
-    input CAND1_BTN_PRESS,
-    input CAND2_BTN_PRESS,
-    input CAND3_BTN_PRESS,
-    input CAND4_BTN_PRESS,
-    output reg [7:0] LEDS
+    input CLK,  // CLK
+    input RST,  // RST
+    input MODE, // MODE
+    input VALID_VOTE_CASTED,    // Valid vote casted
+    input [7:0] CAND1_VOTE,     // Candidate 1 vote
+    input [7:0] CAND2_VOTE,     // Candidate 2 vote
+    input [7:0] CAND3_VOTE,     // Candidate 3 vote
+    input [7:0] CAND4_VOTE,     // Candidate 4 vote
+    input CAND1_BTN_PRESS,      // Candidate 1 vote button
+    input CAND2_BTN_PRESS,      // Candidate 2 vote button
+    input CAND3_BTN_PRESS,      // Candidate 3 vote button
+    input CAND4_BTN_PRESS,      // Candidate 4 vote button
+    output reg [7:0] LEDS       // LEDS
 );
-    reg [30:0] COUNTER;
+    reg [30:0] COUNTER;     // Counter
     
     always @(posedge CLK)
     begin
@@ -66,16 +66,7 @@ module ModeControl (
             COUNTER <= COUNTER + 1; // If counter is not 0 increase it till 10
         else
             COUNTER <= 0; // Once counter becomes 10, reset it to zero
-     end
-    
-     always @(posedge CLK)
-     begin
-        if (RST)
-            LEDS <= 0;
-        else
-        begin
-     end
-   end 
+     end 
    
    always @(posedge CLK)
    begin
