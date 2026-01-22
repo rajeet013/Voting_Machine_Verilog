@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rajeet013/Voting Machine/project_1/project_1.srcs/sources_1/new/design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ButtonControl
+INFO: [VRFC 10-311] analyzing module ModeControl
+INFO: [VRFC 10-311] analyzing module VoteLogger
+INFO: [VRFC 10-311] analyzing module VotingMachine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rajeet013/Voting Machine/project_1/project_1.srcs/sources_1/new/VotingMachine_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rajeet013/Voting Machine/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
